@@ -7,12 +7,6 @@ gem 'rails', '3.0.1'
 
 gem 'mysql2'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
 # To use debugger
 # gem 'ruby-debug'
 
@@ -28,3 +22,10 @@ gem 'mysql2'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem 'haml'
+gem 'mime-types'
+gem 'compass'
+
+gem 'aws-s3', :require => 'aws/s3'
+
