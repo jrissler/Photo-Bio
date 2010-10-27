@@ -23,9 +23,20 @@ gem 'mysql2'
 #   gem 'webrat'
 # end
 
-gem 'haml'
 gem 'mime-types'
 gem 'compass'
-
 gem 'aws-s3', :require => 'aws/s3'
 
+gem 'rails3-generators'
+gem 'haml-rails'
+gem 'jquery-rails'
+
+
+group :test do
+  gem "rspec"
+  gem "rspec-rails"
+  gem "factory_girl"
+  gem "cucumber"
+  gem "cucumber-rails"
+  gem "capybara"
+end
