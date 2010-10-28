@@ -26,17 +26,26 @@ gem 'mysql2'
 gem 'mime-types'
 gem 'compass'
 gem 'aws-s3', :require => 'aws/s3'
+gem 'devise'
+gem 'hpricot'
+gem 'ruby_parser'
 
 gem 'rails3-generators'
 gem 'haml-rails'
 gem 'jquery-rails'
 
 
-group :test do
+group :test, :development do
   gem "rspec"
   gem "rspec-rails"
   gem "factory_girl"
-  gem "cucumber"
-  gem "cucumber-rails"
-  gem "capybara"
+end
+
+group :cucumber do
+    gem 'capybara'
+    gem 'database_cleaner'
+    gem 'cucumber-rails'
+    gem 'cucumber'
+    gem 'spork'
+    gem 'launchy'
 end
