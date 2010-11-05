@@ -1,0 +1,59 @@
+/* line 1, sass/_main.sass */
+body {
+  padding: 11px 0 14px 0;
+  margin: 0 auto;
+  width: 978px;
+  background-color: #efefdf;
+  color: black;
+}
+
+/* line 8, sass/_main.sass */
+div, h1, h2, p, form, label, input, textarea, img, span, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, sass/_main.sass */
+ul {
+  list-style-type: none;
+}
+
+/* line 16, sass/_main.sass */
+.spacer {
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+}
+
+/*------------------------------------------------body-------------------- */
+/*------------------------------------------------header-------------------- */
+/* line 24, sass/_main.sass */
+#header {
+  background: url(images/header.gif) 0 0 no-repeat;
+  height: 274px;
+}
+/* line 27, sass/_main.sass */
+#header ul {
+  background: url(images/nav_bar.gif) 0 0 no-repeat;
+  height: 29px;
+}
+/* line 30, sass/_main.sass */
+#header ul li {
+  background: url(images/nav_div.gif) right top no-repeat;
+  height: 27px;
+  float: left;
+  padding: 0 1px 0 0;
+}
+/* line 35, sass/_main.sass */
+#header ul li a {
+  display: block;
+  background: url(images/nav_bg.gif) 0 0 repeat-x;
+  padding: 0 14px;
+  font: bold 11px/27px Arial, Helvetica, sans-serif;
+  color: #344a04;
+  background-color: inherit;
+  text-decoration: none;
+  background: url(images/nav_hover.gif) 0 0 repeat-x;
+  color: white;
+  background-color: inherit;
+}

@@ -24,7 +24,7 @@ gem 'mysql2'
 # end
 
 gem 'mime-types'
-gem 'compass'
+gem 'compass', '0.10.6'
 gem 'aws-s3', :require => 'aws/s3'
 gem 'devise'
 gem 'hpricot'
