@@ -34,6 +34,10 @@ gem 'rails3-generators'
 gem 'haml-rails'
 gem 'jquery-rails'
 
+gem 'formtastic', '~> 1.1.0'
+
+gem 'paperclip'
+
 
 group :test, :development do
   gem "rspec"
