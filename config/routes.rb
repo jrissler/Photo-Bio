@@ -1,4 +1,8 @@
 PhotoBio::Application.routes.draw do
+  resources :photos
+
+  resources :events
+
   devise_for :users
 
   resources :pages
@@ -49,8 +53,12 @@ PhotoBio::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  match "/getting_started" => "pages#show", :id => 4, :as => :getting_started
+  match "/about" => "pages#show", :id => 3, :as => :about
+  match "/what_is_this" => "pages#show", :id => 2, :as => :what_is_this
 
-  root :to => "pages#index"
+  root :to => "pages#show", :id => 1
 
   # See how all your routes lay out with "rake routes"
 
