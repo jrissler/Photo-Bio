@@ -1,0 +1,31 @@
+%h1 New photo
+
+= render 'form'
+
+= link_to 'Back', photos_path
+
+- session_key = Rails.application.config.session_options[:key]
+:javascript
+  $(function () {
+    var uploadify_script_data = {};
+
+    // Fetch the CSRF meta tag data
+    var csrf_token = $('meta[name=csrf-token]').attr('content');
+    var csrf_param = $('meta[name=csrf-param]').attr('content');
+
+    // Now associate the data in the config, encoding the data safely
+    uploadify_script_data[csrf_param] = encodeURI(encodeURIComponent(csrf_token));
+
+    // Associate the session information
+    uploadify_script_data["#{session_key}"] = "#{cookies[session_key]}";
+
+    $('#upload_photo').uploadify({
+      uploader    : '/flash/uploadify.swf',
+      cancelImg   : '/images/cancel.png',
+      buttonText  : 'Upload',
+      script      : '/photos/',
+      scriptData  : uploadify_script_data
+    });   
+  });
+  
+  

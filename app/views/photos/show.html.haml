@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @photo.name
+%p
+  %b Description:
+  = @photo.description
+%p
+  %b Friendly file name:
+  = @photo.friendly_file_name
+%p
+  %b User:
+  = @photo.user_id
+%p
+  %b Event:
+  = @photo.event_id
+
+= link_to 'Edit', edit_photo_path(@photo)
+\|
+= link_to 'Back', photos_path
