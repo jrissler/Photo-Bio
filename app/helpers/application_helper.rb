@@ -6,9 +6,10 @@ module ApplicationHelper
   
   def main_nav
     links = []
-    links << link_to("Home", root_url, :title => "Home")
-    links << link_to("Check ti", root_url, :title => "Home")
-    links << link_to("About", root_url, :title => "Home")
+    links << link_to("Home", root_path, :title => "Home")
+    links << link_to("What is This?", what_is_this_path, :title => "What is This?")
+    links << link_to("About", about_url, :title => "Home")
+    links << link_to("Getting Started", getting_started_url, :title => "Getting Started")
     
     menu(links)
   end
